@@ -1,0 +1,21 @@
+body {
+  background: #faf6ec;
+  color: #222;
+}
+.menu {
+  background: #f85;
+}
+.menu li a {
+  color: #222;
+}
+.animais h2 {
+  color: #e54;
+}
+.animais-lista::-webkit-scrollbar-thumb {
+  background: #f85;
+  border-left: 4px solid #faf6ec;
+  border-right: 4px solid #faf6ec;
+}
+.faq-lista dt {
+  color: #e54;
+}

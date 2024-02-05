@@ -1,0 +1,15 @@
+.menu {
+  grid-column: 3/5;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.menu li a {
+  display: block;
+  padding: 10px;
+  margin-right: 10px;
+}

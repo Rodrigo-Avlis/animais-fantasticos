@@ -4,6 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=IBM+Plex+Mono" rel="stylesheet">
+
   <link rel="preload" href="./assets/css/style.css" as="style" />
   <link rel="preload" href="./assets/js/script.js" as="script" />
   <link rel="stylesheet" href="./assets/css/style.css">
@@ -12,7 +18,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav class="menu">
     <ul>
       <li><a href="#animais">Animais</a></li>
       <li><a href="#faq">Faq</a></li>
@@ -20,9 +26,9 @@
       <li><a href="#https://www.origamid.com/">Dev →</a></li>
     </ul>
   </nav>
-  <section class="grid-section animas" id="animais">
+  <section class="grid-section animais" id="animais">
     <h1 class="titulo">Animais Fantásticos</h1>
-    <ul>
+    <ul class="animais-lista">
       <li><img src="/public/assets/img/imagem1.jpg" alt="raposa"></li>
       <li><img src="/public/assets/img/imagem2.jpg" alt="esquilo"></li>
       <li><img src="/public/assets/img/imagem3.jpg" alt="urso"></li>
@@ -30,7 +36,7 @@
       <li><img src="/public/assets/img/imagem5.jpg" alt="macaco"></li>
       <li><img src="/public/assets/img/imagem6.jpg" alt="leao"></li>
     </ul>
-    <div class="animais-descricao">
+    <div class="animais-descricoes">
       <section>
         <h2>Raposa</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolores mollitia unde esse cum, libero repellat quas rem sequi, fugiat tenetur laborum fuga dolorum aspernatur?</p>
@@ -76,8 +82,8 @@
     </div>
   </section>
   <section class="grid-section faq" id="faq">
-    <h1>FAQ</h1>
-    <dl>
+    <h1 class="titulo">FAQ</h1>
+    <dl class="faq-lista">
       <dt>Qual a idade dos animais?</dt>
       <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere tempore natus facilis consequuntur non quibusdam.</dd>
       <dt>Eles são fantásticos?</dt>
@@ -89,7 +95,7 @@
     </dl>
   </section>
   <section class="grid-section contato" id="contato">
-    <h1>CONTATO</h1>
+    <h1 class="titulo">CONTATO</h1>
     <div class="mapa">
       <img src="./assets/img/mapa.png" alt="">
     </div>

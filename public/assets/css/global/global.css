@@ -1,0 +1,43 @@
+body,
+h1,
+h2,
+h3,
+ul,
+li,
+a,
+p,
+span,
+dd,
+dt,
+dl {
+  margin: 0px;
+  padding: 0px;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+[src$=".jpg"] {
+  border-radius: 0px;
+}
+body {
+  display: grid;
+  grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
+}
+.grid-section {
+  grid-column: 2/4;
+  width: 1000px;
+  box-sizing: border-box;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 90 300px 1fr;
+  column-gap: 20px;
+  margin-bottom: 4rem;
+}
