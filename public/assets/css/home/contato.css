@@ -1,0 +1,9 @@
+.mapa {
+  grid-column: 2;
+}
+.dados {
+  grid-column: 3;
+}
+.dados li {
+  margin-bottom: 1rem;
+}

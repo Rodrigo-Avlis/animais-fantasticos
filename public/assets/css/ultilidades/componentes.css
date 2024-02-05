@@ -14,3 +14,11 @@
   margin-right: 10px;
   background-color: #f85;
 }
+.dados li::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+  background-color: #f85;
+}
