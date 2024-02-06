@@ -1,24 +1,42 @@
-body {
-  background: #faf6ec;
-  color: #222;
+:root {
+  --cor-0: #000;
+  --cor-1: #222;
+  --cor-2: #faf6ec;
+  --cor-3: #e54;
+  --cor-4: #f85;
 }
-.menu {
-  background: #f85;
+
+.cor-0 {
+  color: var(--cor-0);
 }
+.cor-1 {
+  color: var(--cor-1);
+}
+.cor-2 {
+  color: var(--cor-3);
+}
+
+.cor-bg-1 {
+  background: var(--cor-2);
+}
+.cor-bg-2 {
+  background: var(--cor-4);
+}
+
+.cor-border::-webkit-scrollbar-thumb {
+  background: var(--cor-4);
+  border-left: 4px solid var(--cor-2);
+  border-right: 4px solid var(--cor-2);
+}
+
+/* Elements */
 .menu li a {
-  color: #222;
+  color: var(--cor-1);
 }
 .animais h2 {
-  color: #e54;
+  color: var(--cor-3);
 }
-.animais-lista::-webkit-scrollbar-thumb {
-  background: #f85;
-  border-left: 4px solid #faf6ec;
-  border-right: 4px solid #faf6ec;
-}
+
 .faq-lista dt {
-  color: #e54;
-}
-.copy {
-  background: #f85;
+  color: var(--cor-3);
 }

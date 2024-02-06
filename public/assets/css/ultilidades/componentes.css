@@ -4,7 +4,7 @@
   width: 40px;
   height: 10px;
   margin-right: 10px;
-  background-color: #f85;
+  background-color: var(--cor-4);
 }
 .faq-lista dt::before {
   content: "";
@@ -12,7 +12,7 @@
   width: 20px;
   height: 10px;
   margin-right: 10px;
-  background-color: #f85;
+  background-color: var(--cor-4);
 }
 .dados li::before {
   content: "";
@@ -20,5 +20,5 @@
   width: 20px;
   height: 10px;
   margin-right: 10px;
-  background-color: #f85;
+  background-color: var(--cor-4);
 }
