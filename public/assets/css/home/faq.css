@@ -9,3 +9,28 @@
   margin-bottom: 0.5rem;
   margin-left: 30px;
 }
+.js-accordion dd {
+  display: none;
+}
+.js-accordion dd.ativo {
+  display: block;
+  animation: slideDown 0.5s forwards;
+}
+.js-accordion dt::after {
+  content: "⬎";
+  margin-left: 5px;
+}
+.js-accordion dt.ativo::after {
+  content: "⬏";
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 200px;
+  }
+}
