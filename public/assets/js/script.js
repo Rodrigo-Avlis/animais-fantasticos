@@ -41,3 +41,46 @@ function initAccordion() {
   }
 }
 initAccordion();
+
+function initScrollSuave() {
+  const linksInternos = document.querySelectorAll(".js-menu a[href^='#']");
+
+  if (linksInternos.length) {
+    function activeScrollSuave(event) {
+      event.preventDefault();
+      const href = event.currentTarget.getAttribute("href");
+      const section = document.querySelector(href);
+
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+
+    linksInternos.forEach((link) => {
+      link.addEventListener("click", activeScrollSuave);
+    });
+  }
+}
+initScrollSuave();
+
+function initScroll() {
+  const sections = document.querySelectorAll(".js-scroll");
+
+  if (sections.length) {
+    function activeScroll() {
+      sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const halfWindow = window.innerHeight * 0.6;
+        const isSectionVisible = sectionTop - halfWindow < 0;
+
+        if (isSectionVisible) {
+          section.classList.add("ativo");
+        }
+      });
+    }
+    activeScroll();
+    window.addEventListener("scroll", activeScroll);
+  }
+}
+initScroll();
