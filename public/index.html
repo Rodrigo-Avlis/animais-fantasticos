@@ -19,7 +19,7 @@
 </head>
 
 <body class="cor-1 cor-bg-1">
-  <nav class="menu cor-bg-2 js-menu">
+  <nav class="menu cor-bg-2 " data-menu="suave">
     <ul>
       <li><a href="#animais">Animais</a></li>
       <li><a href="#faq">Faq</a></li>
@@ -27,9 +27,9 @@
       <li><a href="https://www.origamid.com/">Dev →</a></li>
     </ul>
   </nav>
-  <section class="grid-section animais js-scroll" id="animais">
+  <section class="grid-section animais " data-anime="scroll" id="animais">
     <h1 class="titulo">Animais Fantásticos</h1>
-    <ul class="animais-lista cor-border js-tabmenu">
+    <ul class="animais-lista cor-border " data-tab="menu">
       <li><img src="/public/assets/img/imagem1.jpg" alt="raposa"></li>
       <li><img src="/public/assets/img/imagem2.jpg" alt="esquilo"></li>
       <li><img src="/public/assets/img/imagem3.jpg" alt="urso"></li>
@@ -37,7 +37,7 @@
       <li><img src="/public/assets/img/imagem5.jpg" alt="macaco"></li>
       <li><img src="/public/assets/img/imagem6.jpg" alt="leao"></li>
     </ul>
-    <div class="animais-descricoes js-tabcontent">
+    <div class="animais-descricoes" data-tab="content">
       <section>
         <h2>Raposa</h2>
         <p>Raposa ipsum dolor sit amet consectetur adipisicing elit. In dolores mollitia unde esse cum, libero repellat quas rem sequi, fugiat tenetur laborum fuga dolorum aspernatur?</p>
@@ -76,9 +76,9 @@
       </section>
     </div>
   </section>
-  <section class="grid-section faq js-scroll" id="faq">
+  <section class="grid-section faq " data-anime="scroll" id="faq">
     <h1 class="titulo">FAQ</h1>
-    <dl class="faq-lista js-accordion">
+    <dl class="faq-lista " data-anime="accordion">
       <dt class="cor-3">Qual a idade dos animais?</dt>
       <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere tempore natus facilis consequuntur non quibusdam.</dd>
       <dt class="cor-3">Eles são fantásticos?</dt>
@@ -89,7 +89,7 @@
       <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, accusantium maiores! Porro ipsa et, fugiat sapiente provident similique vel qui illo excepturi numquam inventore? Natus, totam quam?</dd>
     </dl>
   </section>
-  <section class="grid-section contato js-scroll" id="contato">
+  <section class="grid-section contato " data-anime="scroll" id="contato">
     <h1 class="titulo">CONTATO</h1>
     <div class="mapa">
       <img src="./assets/img/mapa.png" alt="">
@@ -104,7 +104,7 @@
   <footer class="copy cor-bg-2">
     <p>Todos os direitos reservados.</p>
   </footer>
-  <script src="./assets/js/script.js"></script>
+  <script type="module" src="./assets/js/script.js"></script>
 </body>
 
 </html>
