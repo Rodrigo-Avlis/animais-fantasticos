@@ -8,6 +8,7 @@
 @import "./home/animais.css";
 @import "./home/contato.css";
 @import "./home/faq.css";
+@import "./home/modal.css";
 
 /* utilidades */
 @import "./ultilidades/cor.css";

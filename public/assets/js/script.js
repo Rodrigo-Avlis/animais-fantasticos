@@ -3,9 +3,11 @@ import initAccordion from "./modules/accordion.js";
 import initScrollSuave from "./modules/scroll-suave.js";
 import initScroll from "./modules/scroll.js";
 import initShow from "./modules/show.js";
+import initModal from "./modules/modal.js";
 
 initTab();
 initAccordion();
 initScrollSuave();
 initShow();
 initScroll();
+initModal();
