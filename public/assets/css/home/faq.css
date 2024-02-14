@@ -9,18 +9,18 @@
   margin-bottom: 0.5rem;
   margin-left: 30px;
 }
-[data-anime="accordion"] dd {
+.js [data-anime="accordion"] dd {
   display: none;
 }
-[data-anime="accordion"] dd.ativo {
+.js [data-anime="accordion"] dd.ativo {
   display: block;
   animation: slideDown 0.5s forwards;
 }
-[data-anime="accordion"] dt::after {
+.js [data-anime="accordion"] dt::after {
   content: "⬎";
   margin-left: 5px;
 }
-[data-anime="accordion"] dt.ativo::after {
+.js [data-anime="accordion"] dt.ativo::after {
   content: "⬏";
 }
 
