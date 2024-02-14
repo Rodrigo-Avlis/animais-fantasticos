@@ -9,6 +9,7 @@
 @import "./home/contato.css";
 @import "./home/faq.css";
 @import "./home/modal.css";
+@import "./home/tooltip.css";
 
 /* utilidades */
 @import "./ultilidades/cor.css";

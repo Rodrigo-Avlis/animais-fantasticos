@@ -4,6 +4,7 @@ import initScrollSuave from "./modules/scroll-suave.js";
 import initScroll from "./modules/scroll.js";
 import initShow from "./modules/show.js";
 import initModal from "./modules/modal.js";
+import initTooltip from "./modules/tooltip.js";
 
 initTab();
 initAccordion();
@@ -11,3 +12,4 @@ initScrollSuave();
 initShow();
 initScroll();
 initModal();
+initTooltip();
