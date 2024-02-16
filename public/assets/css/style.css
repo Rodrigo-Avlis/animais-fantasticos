@@ -11,6 +11,7 @@
 @import "./home/modal.css";
 @import "./home/tooltip.css";
 @import "./home/dropdown-menu.css";
+@import "./home/menu-mobile.css";
 
 /* utilidades */
 @import "./ultilidades/cor.css";
