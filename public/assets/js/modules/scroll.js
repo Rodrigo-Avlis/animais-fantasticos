@@ -10,6 +10,8 @@ export default function initScroll() {
 
         if (isSectionVisible) {
           section.classList.add("ativo");
+        } else if (section.classList.contains("ativo")) {
+          section.classList.remove("ativo");
         }
       });
     }
