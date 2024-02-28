@@ -19,9 +19,23 @@
     grid-column: 2;
   }
   .faq-lista,
-  .dados,
-  .mapa {
+  .numeros-grid {
     grid-column: 1/3 !important;
+  }
+  .mapa {
+    grid-column: 1/4 !important;
+    grid-row: 2 !important;
+  }
+  .dados {
+    grid-column: 1/4 !important;
+    grid-row: 3 !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .form {
+    grid-column: 1/4 !important;
+    grid-row: 4 !important;
+    margin-bottom: 20px;
   }
   .grid-section h1 {
     font-size: var(--fs-l);
@@ -34,8 +48,5 @@
   }
   .mapa {
     margin-bottom: 20px;
-  }
-  .numeros-grid {
-    grid-column: 1/3 !important;
   }
 }

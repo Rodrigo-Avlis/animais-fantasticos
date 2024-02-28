@@ -1,13 +1,18 @@
 .mapa {
   grid-column: 2;
+  grid-row: 2/4;
 }
 .dados {
   grid-column: 3;
+  grid-row: 2/3;
+}
+.form {
+  grid-column: 3;
+  grid-row: 3/4;
 }
 .dados li {
   margin-bottom: 1rem;
 }
-
 .js [data-anime="scroll"] {
   opacity: 0;
   transform: translate3d(-30px, 0, 0);
@@ -16,4 +21,23 @@
 .js [data-anime="scroll"].ativo {
   opacity: 1;
   transform: translate3d(0, 0, 0);
+}
+
+.form input,
+.form label,
+.form textarea {
+  width: 96%;
+  font-family: var(--ff-1);
+  /* font-weight: var(--fw-b); */
+}
+.form input,
+.form textarea {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.form button {
+  background: var(--cor-4);
+  color: var(--cor-1);
+  padding: 4px 8px;
+  width: 98%;
 }

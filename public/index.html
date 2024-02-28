@@ -103,30 +103,6 @@
     <section class="grid-section numeros" data-anime="scroll">
       <h1 class="titulo">Números</h1>
       <div class="numeros-grid">
-        <div class="numero-animal">
-          <h3>Raposa</h3>
-          <span data-numero>4874</span>
-        </div>
-        <div class="numero-animal">
-          <h3>Esquilo</h3>
-          <span data-numero>4244</span>
-        </div>
-        <div class="numero-animal">
-          <h3>Urso</h3>
-          <span data-numero>58874</span>
-        </div>
-        <div class="numero-animal">
-          <h3>Lobo</h3>
-          <span data-numero>4574</span>
-        </div>
-        <div class="numero-animal">
-          <h3>Macaco</h3>
-          <span data-numero>3874</span>
-        </div>
-        <div class="numero-animal">
-          <h3>Leão</h3>
-          <span data-numero>9574</span>
-        </div>
       </div>
     </section>
     <section class="grid-section contato " data-anime="scroll" id="contato">
@@ -139,8 +115,24 @@
         <li>+55 (21) 9999-9999</li>
         <li>Rua do Conde, n° 21</li>
         <li>Rio de Janeiro - RJ</li>
+        <li>Doe <span class="btc-preco">0</span> bitcoin para nos ajudar</li>
         <li data-semana="1,2,3,4,5" data-horario="8,18">Seg à Sex das 8h às 18h</li>
       </ul>
+      <div class="form">
+        <form action="" class="contato-form" id="contato-form">
+          <label for="name">Nome</label>
+          <input type="text" name="name" id="name" required>
+          <span class="erro"></span><br>
+
+          <label for="emailForm">Email</label>
+          <input type="email" name="emailForm" id="emailForm" required>
+          <span class="erro"></span><br>
+
+          <label for="textarea">Mensagem</label>
+          <textarea name="textarea" id="textarea" cols="30" rows="4"></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
     </section>
     <footer class="copy cor-bg-2">
       <p>Todos os direitos reservados.</p>
@@ -151,7 +143,7 @@
     <div class="modal">
       <button class="botao-fechar" data-modal="fechar">X</button>
       <form action="">
-        <label for="emal">Email</label>
+        <label for="email">Email</label>
         <input type="text" for="email" id="email">
         <label for="senha">Senha</label>
         <input type="password" for="senha" id="senha">
