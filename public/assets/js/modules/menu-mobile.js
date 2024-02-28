@@ -5,16 +5,17 @@ export default function initMenuMobile() {
   const menuLista = document.querySelector("[data-menu='lista']");
   const eventsUser = ["click", "touchstart"];
 
-  if (menuButton && menuLista) {
-    function openMenu() {
-      menuButton.classList.add("active");
-      menuLista.classList.add("active");
+  function openMenu() {
+    menuButton.classList.add("active");
+    menuLista.classList.add("active");
 
-      outsideCLick(menuLista, eventsUser, () => {
-        menuButton.classList.remove("active");
-        menuLista.classList.remove("active");
-      });
-    }
+    outsideCLick(menuLista, eventsUser, () => {
+      menuButton.classList.remove("active");
+      menuLista.classList.remove("active");
+    });
+  }
+
+  if (menuButton && menuLista) {
     eventsUser.forEach((eventUser) => {
       menuButton.addEventListener(eventUser, openMenu);
     });

@@ -1,8 +1,9 @@
 export default function initForm() {
   const form = document.querySelector("#contato-form");
   const dados = {};
+
   function handleChange(event) {
-    const target = event.target;
+    const { target } = event;
 
     if (!target.checkValidity()) {
       target.classList.add("invalido");
@@ -10,7 +11,7 @@ export default function initForm() {
       // target.setCustomValidity("Este campo é importante!");
       target.nextElementSibling.innerText = target.validationMessage;
 
-      dados[event.target.name] = event.target.value;
+      dados[target.name] = target.value;
     }
   }
   form.addEventListener("change", handleChange);
