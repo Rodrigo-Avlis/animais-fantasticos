@@ -2,7 +2,6 @@
 @import "./global/global.css";
 @import "./global/header.css";
 @import "./global/footer.css";
-@import "./global/mobile.css";
 
 /* Home */
 @import "./home/animais.css";
@@ -14,7 +13,10 @@
 @import "./home/menu-mobile.css";
 @import "./home/numeros.css";
 
-/* utilidades */
-@import "./ultilidades/cor.css";
-@import "./ultilidades/tipografia.css";
-@import "./ultilidades/componentes.css";
+/* utility */
+@import "./utility/cor.css";
+@import "./utility/tipografia.css";
+@import "./utility/componentes.css";
+
+/* mobile */
+@import "./global/mobile.css";
