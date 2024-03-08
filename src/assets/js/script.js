@@ -1,8 +1,8 @@
 // import "../css/scss/style.scss";
 
-import initTab from "./modules/tab.js";
-import initAccordion from "./modules/accordion.js";
-import initScrollSuave from "./modules/scroll-suave.js";
+import Tab from "./modules/tab.js";
+import Accordion from "./modules/accordion.js";
+import ScrollSuave from "./modules/scroll-suave.js";
 import initScroll from "./modules/scroll.js";
 import initShow from "./modules/show.js";
 import initModal from "./modules/modal.js";
@@ -15,9 +15,19 @@ import initFetchAnimais from "./modules/fetch-animais.js";
 import initFetchBitcoin from "./modules/fetch-bitcoin.js";
 import initImgAll from "./modules/img-all.js";
 
-initTab();
-initAccordion();
-initScrollSuave();
+const tab = new Tab(
+  "[data-tab='menu'] li",
+  "[data-tab='content'] section",
+  "ativo"
+);
+tab.init();
+
+const accordion = new Accordion("[data-anime='accordion'] dt", "ativo");
+accordion.init();
+
+const scrollSuave = new ScrollSuave("[data-menu='suave'] a[href^='#']");
+scrollSuave.init();
+
 initShow();
 initScroll();
 initModal();
