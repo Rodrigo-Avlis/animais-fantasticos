@@ -1,3 +1,5 @@
+// import "../css/scss/style.scss";
+
 import initTab from "./modules/tab.js";
 import initAccordion from "./modules/accordion.js";
 import initScrollSuave from "./modules/scroll-suave.js";
@@ -11,6 +13,7 @@ import initFuncionamento from "./modules/funcionamento.js";
 import initForm from "./modules/form.js";
 import initFetchAnimais from "./modules/fetch-animais.js";
 import initFetchBitcoin from "./modules/fetch-bitcoin.js";
+import initImgAll from "./modules/img-all.js";
 
 initTab();
 initAccordion();
@@ -25,3 +28,4 @@ initFuncionamento();
 initForm();
 initFetchAnimais();
 initFetchBitcoin();
+initImgAll();
