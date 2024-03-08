@@ -1,0 +1,22 @@
+/* Global */
+@import "./global/_global";
+@import "./global/_header";
+@import "./global/_footer";
+
+/* Home */
+@import "./home/_animais";
+@import "./home/_contato";
+@import "./home/_faq";
+@import "./home/_modal";
+@import "./home/_tooltip";
+@import "./home/_dropdown-menu";
+@import "./home/_menu-mobile";
+@import "./home/_numeros";
+
+/* utility */
+@import "./utility/_cor";
+@import "./utility/_tipografia";
+@import "./utility/_componentes";
+
+/* mobile */
+@import "./global/_mobile";

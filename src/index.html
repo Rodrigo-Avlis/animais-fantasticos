@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=IBM+Plex+Mono" rel="stylesheet">
+
+  <link rel="preload" href="./assets/css/scss/style.min.css" as="style" />
+  <link rel="preload" href="./assets/js/script.min.js" as="script" />
+  <script>document.documentElement.className += " js";</script>
+  <link rel="stylesheet" href="./assets/css/scss/style.css">
+
+  <title>Animais Fantásticos</title>
+</head>
+
+<body class="cor-1 cor-bg-1">
+  <div class="grid-container">
+    <nav class="menu cor-bg-2 " data-menu="suave">
+      <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul data-menu="lista" id="menu">
+        <li><a href="#animais">Animais</a></li>
+        <li data-dropdown>
+          <a href="#sobre.html">Sobre</a>
+          <ul class="dropdown-menu">
+            <li><a href="#empresa.html">Empresa</a></li>
+            <li><a href="#equipe.html">Equipe</a></li>
+            <li><a href="#socios.html">Socios</a></li>
+            <li><a href="#investidores.html">Investidores</a></li>
+          </ul>
+        </li>
+        <li><a href="#faq">Faq</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a data-modal="abrir" href="#Login">Login →</a></li>
+      </ul>
+    </nav>
+    <section class="grid-section animais " data-anime="scroll" id="animais">
+      <h1 class="titulo">Animais Fantásticos</h1>
+      <ul class="animais-lista cor-border " data-tab="menu">
+        <li><img src="./assets/img/imagem1.jpg" alt="raposa"></li>
+        <li><img src="./assets/img/imagem2.jpg" alt="esquilo"></li>
+        <li><img src="./assets/img/imagem3.jpg" alt="urso"></li>
+        <li><img src="./assets/img/imagem4.jpg" alt="lobo"></li>
+        <li><img src="./assets/img/imagem5.jpg" alt="macaco"></li>
+        <li><img src="./assets/img/imagem6.jpg" alt="leao"></li>
+      </ul>
+      <div class="animais-descricoes" data-tab="content">
+        <section>
+          <h2>Raposa</h2>
+          <p>Raposa ipsum dolor sit amet consectetur adipisicing elit. In dolores mollitia unde esse cum, libero repellat quas rem sequi, fugiat tenetur laborum fuga dolorum aspernatur?</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet impedit voluptatem dolorem temporibus, laborum eius at sapiente a suscipit cumque!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolores mollitia unde esse cum, libero repellat quas rem sequi, fugiat tenetur laborum fuga dolorum aspernatur?</p>
+        </section>
+        <section>
+          <h2>Esquilo</h2>
+          <p>Esquilo ipsum dolor sit amet consectetur adipisicing elit. In dolores mollitia unde esse cum, libero repellat quas rem sequi, fugiat tenetur laborum fuga dolorum aspernatur?</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet impedit voluptatem dolorem temporibus, laborum eius at sapiente a suscipit cumque!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolores mollitia unde esse cum, libero repellat quas rem sequi, fugiat tenetur laborum fuga dolorum aspernatur?</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet impedit voluptatem dolorem temporibus, laborum eius at sapiente a suscipit cumque!</p>
+        </section>
+        <section>
+          <h2>Urso</h2>
+          <p>Urso ipsum dolor sit amet consectetur adipisicing elit. In dolores mollitia unde esse cum, libero repellat quas rem sequi, fugiat tenetur laborum fuga dolorum aspernatur?</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet impedit voluptatem dolorem temporibus, laborum eius at sapiente a suscipit cumque!</p>
+        </section>
+        <section>
+          <h2>Lobo</h2>
+          <p>Lobo ipsum dolor sit amet consectetur adipisicing elit. In dolores mollitia unde esse cum, libero repellat quas rem sequi, fugiat tenetur laborum fuga dolorum aspernatur?</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet impedit voluptatem dolorem temporibus, laborum eius at sapiente a suscipit cumque!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolores mollitia unde esse cum, libero repellat quas rem sequi, fugiat tenetur laborum fuga dolorum aspernatur?</p>
+        </section>
+        <section>
+          <h2>Macaco</h2>
+          <p>Macaco ipsum dolor sit amet consectetur adipisicing elit. In dolores mollitia unde esse cum, libero repellat quas rem sequi, fugiat tenetur laborum fuga dolorum aspernatur?</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet impedit voluptatem dolorem temporibus, laborum eius at sapiente a suscipit cumque!</p>
+        </section>
+        <section>
+          <h2>Leão</h2>
+          <p>Leão ipsum dolor sit amet consectetur adipisicing elit. In dolores mollitia unde esse cum, libero repellat quas rem sequi, fugiat tenetur laborum fuga dolorum aspernatur?</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet impedit voluptatem dolorem temporibus, laborum eius at sapiente a suscipit cumque!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolores mollitia unde esse cum, libero repellat quas rem sequi, fugiat tenetur laborum fuga dolorum aspernatur?</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet impedit voluptatem dolorem temporibus, laborum eius at sapiente a suscipit cumque!</p>
+        </section>
+      </div>
+    </section>
+    <section class="grid-section faq " data-anime="scroll" id="faq">
+      <h1 class="titulo">FAQ</h1>
+      <dl class="faq-lista " data-anime="accordion">
+        <dt class="cor-3">Qual a idade dos animais?</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere tempore natus facilis consequuntur non quibusdam.</dd>
+        <dt class="cor-3">Eles são fantásticos?</dt>
+        <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident fugiat doloremque obcaecati quod consequatur.</dd>
+        <dt class="cor-3">Qual a diferença?</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, voluptates tempora. Non eos quo inventore culpa recusandae facere modi corrupti. Consectetur, voluptates!</dd>
+        <dt class="cor-3">Como proteger?</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, accusantium maiores! Porro ipsa et, fugiat sapiente provident similique vel qui illo excepturi numquam inventore? Natus, totam quam?</dd>
+      </dl>
+    </section>
+    <section class="grid-section numeros" data-anime="scroll">
+      <h1 class="titulo">Números</h1>
+      <div class="numeros-grid">
+      </div>
+    </section>
+    <section class="grid-section contato " data-anime="scroll" id="contato">
+      <h1 class="titulo">CONTATO</h1>
+      <div class="mapa" data-tooltip>
+        <img src="./assets/img/mapa.png" alt="mapa" aria-label="Endereço próximo ao estacionamento.">
+      </div>
+      <ul class="dados">
+        <li>contato@animaisfantasticos.com</li>
+        <li>+55 (21) 9999-9999</li>
+        <li>Rua do Conde, n° 21</li>
+        <li>Rio de Janeiro - RJ</li>
+        <li>Doe <span class="btc-preco">0</span> bitcoin para nos ajudar</li>
+        <li data-semana="1,2,3,4,5" data-horario="8,18">Seg à Sex das 8h às 18h</li>
+      </ul>
+      <div class="form">
+        <form action="" class="contato-form" id="contato-form">
+          <label for="name">Nome</label>
+          <input type="text" name="name" id="name" required>
+          <span class="erro"></span><br>
+
+          <label for="emailForm">Email</label>
+          <input type="email" name="emailForm" id="emailForm" required>
+          <span class="erro"></span><br>
+
+          <label for="textarea">Mensagem</label>
+          <textarea name="textarea" id="textarea" cols="30" rows="4"></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+    <footer class="copy cor-bg-2">
+      <p>Todos os direitos reservados.</p>
+    </footer>
+    <script type="module" src="./assets/js/script.js"></script>
+  </div>
+  <div class="modal-container" data-modal="container">
+    <div class="modal">
+      <button class="botao-fechar" data-modal="fechar">X</button>
+      <form action="">
+        <label for="email">Email</label>
+        <input type="text" for="email" id="email">
+        <label for="senha">Senha</label>
+        <input type="password" for="senha" id="senha">
+        <button class="botao-abrir" type="submit">Entrar</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
