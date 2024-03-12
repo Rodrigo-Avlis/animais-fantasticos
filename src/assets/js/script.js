@@ -10,7 +10,7 @@ import initTooltip from "./modules/tooltip.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
 import initFuncionamento from "./modules/funcionamento.js";
-import initForm from "./modules/form.js";
+import Form from "./modules/form.js";
 import initFetchAnimais from "./modules/fetch-animais.js";
 import initFetchBitcoin from "./modules/fetch-bitcoin.js";
 import initImgAll from "./modules/img-all.js";
@@ -35,13 +35,15 @@ const modal = new Modal(
 );
 modal.init();
 
+const form = new Form("#contato-form");
+form.init();
+
 initShow();
 initScroll();
 initTooltip();
 initDropdownMenu();
 initMenuMobile();
 initFuncionamento();
-initForm();
 initFetchAnimais();
 initFetchBitcoin();
 initImgAll();

@@ -1,18 +1,42 @@
-export default function initForm() {
-  const form = document.querySelector("#contato-form");
-  const dados = {};
+export default class initForm {
+  constructor(form) {
+    this.form = document.querySelector(form);
+    this.dados = {};
 
-  function handleChange(event) {
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event) {
     const { target } = event;
 
     if (!target.checkValidity()) {
+      target.classList.remove("valido");
       target.classList.add("invalido");
-      form.name.setCustomValidity("Digite seu nome!");
+
       // target.setCustomValidity("Este campo é importante!");
+      this.form.name.setCustomValidity("Digite seu nome!");
       target.nextElementSibling.innerText = target.validationMessage;
 
-      dados[target.name] = target.value;
+      this.dados[target.name] = target.value;
+    } else {
+      target.classList.remove("invalido");
+      target.classList.add("valido");
+
+      this.form.name.setCustomValidity("");
+      target.nextElementSibling.innerText = target.validationMessage;
+
+      this.dados[target.name] = target.value;
     }
   }
-  form.addEventListener("change", handleChange);
+
+  addForm() {
+    this.form.addEventListener("change", this.handleChange);
+  }
+
+  init() {
+    if (this.form) {
+      this.addForm();
+    }
+    return this;
+  }
 }
