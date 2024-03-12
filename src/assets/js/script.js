@@ -7,7 +7,7 @@ import Modal from "./modules/modal.js";
 import Scroll from "./modules/scroll.js";
 import Show from "./modules/show.js";
 import initTooltip from "./modules/tooltip.js";
-import initDropdownMenu from "./modules/dropdown-menu.js";
+import DropdownMenu from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
 import initFuncionamento from "./modules/funcionamento.js";
 import Form from "./modules/form.js";
@@ -44,8 +44,10 @@ scroll.init();
 const show = new Show(".animais-descricoes section");
 show.init();
 
+const dropdownMenu = new DropdownMenu("[data-dropdown]", "touchstart", "click");
+dropdownMenu.init();
+
 initTooltip();
-initDropdownMenu();
 initMenuMobile();
 initFuncionamento();
 initFetchAnimais();
