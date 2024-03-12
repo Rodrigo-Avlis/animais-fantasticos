@@ -4,7 +4,7 @@ import Tab from "./modules/tab.js";
 import Accordion from "./modules/accordion.js";
 import ScrollSuave from "./modules/scroll-suave.js";
 import Modal from "./modules/modal.js";
-import initScroll from "./modules/scroll.js";
+import Scroll from "./modules/scroll.js";
 import initShow from "./modules/show.js";
 import initTooltip from "./modules/tooltip.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
@@ -38,8 +38,10 @@ modal.init();
 const form = new Form("#contato-form");
 form.init();
 
+const scroll = new Scroll("[data-anime='scroll']");
+scroll.init();
+
 initShow();
-initScroll();
 initTooltip();
 initDropdownMenu();
 initMenuMobile();
