@@ -5,7 +5,7 @@ import Accordion from "./modules/accordion.js";
 import ScrollSuave from "./modules/scroll-suave.js";
 import Modal from "./modules/modal.js";
 import Scroll from "./modules/scroll.js";
-import initShow from "./modules/show.js";
+import Show from "./modules/show.js";
 import initTooltip from "./modules/tooltip.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
@@ -41,7 +41,9 @@ form.init();
 const scroll = new Scroll("[data-anime='scroll']");
 scroll.init();
 
-initShow();
+const show = new Show(".animais-descricoes section");
+show.init();
+
 initTooltip();
 initDropdownMenu();
 initMenuMobile();
