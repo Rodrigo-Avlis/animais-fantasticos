@@ -5,6 +5,7 @@ export default class FetchAnimais {
     this.url = path;
   }
 
+  // eslint-disable-next-line
   createAnimal(animal) {
     const div = document.createElement("div");
     div.classList.add("numero-animal");

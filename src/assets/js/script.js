@@ -12,7 +12,7 @@ import MenuMobile from "./modules/menu-mobile.js";
 import Funcionamento from "./modules/funcionamento.js";
 import Form from "./modules/form.js";
 import FetchAnimais from "./modules/fetch-animais.js";
-import initFetchBitcoin from "./modules/fetch-bitcoin.js";
+import FetchBitcoin from "./modules/fetch-bitcoin.js";
 import initImgAll from "./modules/img-all.js";
 
 const tab = new Tab(
@@ -62,5 +62,7 @@ funcionamento.init();
 const fetchAnimais = new FetchAnimais("../../../../animaisapi.json");
 fetchAnimais.init();
 
-initFetchBitcoin();
+const fetchBitcoin = new FetchBitcoin("https://blockchain.info/ticker");
+fetchBitcoin.init();
+
 initImgAll();
