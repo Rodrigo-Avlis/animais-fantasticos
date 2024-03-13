@@ -9,7 +9,7 @@ import Show from "./modules/show.js";
 import Tooltip from "./modules/tooltip.js";
 import DropdownMenu from "./modules/dropdown-menu.js";
 import MenuMobile from "./modules/menu-mobile.js";
-import initFuncionamento from "./modules/funcionamento.js";
+import Funcionamento from "./modules/funcionamento.js";
 import Form from "./modules/form.js";
 import initFetchAnimais from "./modules/fetch-animais.js";
 import initFetchBitcoin from "./modules/fetch-bitcoin.js";
@@ -56,7 +56,9 @@ const menuMobile = new MenuMobile(
 );
 menuMobile.init();
 
-initFuncionamento();
+const funcionamento = new Funcionamento("[data-semana]");
+funcionamento.init();
+
 initFetchAnimais();
 initFetchBitcoin();
 initImgAll();
