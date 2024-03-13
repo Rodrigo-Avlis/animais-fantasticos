@@ -1,11 +1,15 @@
-export default function initFuncionamento() {
-  const funcionamento = document.querySelector("[data-semana]");
+export default class Funcionamento {
+  constructor(data) {
+    this.funcionamento = document.querySelector(data);
+  }
 
-  if (funcionamento) {
-    const diasSemana = funcionamento.dataset.semana
+  initFuncionamento() {
+    const diasSemana = this.funcionamento.dataset.semana
       .split(",")
       .map((dia) => +dia);
-    const horarioSemana = funcionamento.dataset.horario.split(",").map(Number);
+    const horarioSemana = this.funcionamento.dataset.horario
+      .split(",")
+      .map(Number);
 
     const dataAgora = new Date();
     const diaAgora = dataAgora.getDay();
@@ -16,7 +20,14 @@ export default function initFuncionamento() {
       horarioAgora >= horarioSemana[0] && horarioAgora < horarioSemana[1];
 
     if (semanaAberta && horarioAberto) {
-      funcionamento.classList.add("aberto");
+      this.funcionamento.classList.add("aberto");
     }
+  }
+
+  init() {
+    if (this.funcionamento) {
+      this.initFuncionamento();
+    }
+    return this;
   }
 }
