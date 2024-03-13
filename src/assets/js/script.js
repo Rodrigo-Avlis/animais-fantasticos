@@ -11,7 +11,7 @@ import DropdownMenu from "./modules/dropdown-menu.js";
 import MenuMobile from "./modules/menu-mobile.js";
 import Funcionamento from "./modules/funcionamento.js";
 import Form from "./modules/form.js";
-import initFetchAnimais from "./modules/fetch-animais.js";
+import FetchAnimais from "./modules/fetch-animais.js";
 import initFetchBitcoin from "./modules/fetch-bitcoin.js";
 import initImgAll from "./modules/img-all.js";
 
@@ -59,6 +59,8 @@ menuMobile.init();
 const funcionamento = new Funcionamento("[data-semana]");
 funcionamento.init();
 
-initFetchAnimais();
+const fetchAnimais = new FetchAnimais("../../../../animaisapi.json");
+fetchAnimais.init();
+
 initFetchBitcoin();
 initImgAll();
