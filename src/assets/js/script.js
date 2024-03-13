@@ -8,7 +8,7 @@ import Scroll from "./modules/scroll.js";
 import Show from "./modules/show.js";
 import Tooltip from "./modules/tooltip.js";
 import DropdownMenu from "./modules/dropdown-menu.js";
-import initMenuMobile from "./modules/menu-mobile.js";
+import MenuMobile from "./modules/menu-mobile.js";
 import initFuncionamento from "./modules/funcionamento.js";
 import Form from "./modules/form.js";
 import initFetchAnimais from "./modules/fetch-animais.js";
@@ -50,7 +50,12 @@ dropdownMenu.init();
 const tooltip = new Tooltip("[data-tooltip] img");
 tooltip.init();
 
-initMenuMobile();
+const menuMobile = new MenuMobile(
+  "[data-menu='button']",
+  "[data-menu='lista']"
+);
+menuMobile.init();
+
 initFuncionamento();
 initFetchAnimais();
 initFetchBitcoin();
