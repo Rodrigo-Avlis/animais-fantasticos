@@ -17,13 +17,15 @@ export default class FetchAnimais {
   preencherAnimais(numeroAnimal, animaisJson) {
     animaisJson.forEach((animal) => {
       const animalElement = this.createAnimal(animal);
-      numeroAnimal.appendChild(animalElement);
+      numeroAnimal.forEach((nAnimal) => {
+        nAnimal.appendChild(animalElement);
+      });
     });
   }
 
   // eslint-disable-next-line no-shadow
   async fetchAnimais(url) {
-    const numeroAnimal = document.querySelector(".numeros-grid");
+    const numeroAnimal = document.querySelectorAll(".numeros-grid");
     const animaisResponse = fetch(url);
     const animaisJson = await (await animaisResponse).json();
     this.preencherAnimais(numeroAnimal, animaisJson);
