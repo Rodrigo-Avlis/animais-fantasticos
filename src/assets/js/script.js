@@ -44,7 +44,10 @@ scroll.init();
 const show = new Show(".animais-descricoes section");
 show.init();
 
-const dropdownMenu = new DropdownMenu("[data-dropdown]", "touchstart", "click");
+const dropdownMenu = new DropdownMenu("[data-dropdown]", [
+  "touchstart",
+  "click",
+]);
 dropdownMenu.init();
 
 const tooltip = new Tooltip("[data-tooltip] img");
